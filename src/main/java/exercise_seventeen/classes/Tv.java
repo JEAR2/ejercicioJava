@@ -1,14 +1,18 @@
 package exercise_seventeen.classes;
 
 public class Tv extends Appliance{
-    private double resolution = 20;
-    private boolean tunerTdt = false;
+    private double resolution;
+    private boolean tunerTdt;
 
     public Tv() {
+        this.resolution=20;
+        this.tunerTdt = false;
     }
 
     public Tv(double priceBase, double weight) {
         super(priceBase, weight);
+        this.resolution=20;
+        this.tunerTdt = false;
     }
 
     public Tv( double resolution, boolean tunerTdt,double price, String color,char energyConsumption, double weight) {

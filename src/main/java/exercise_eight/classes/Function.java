@@ -1,12 +1,40 @@
 package exercise_eight.classes;
 
+import exercise_eight.interfaces.IExerciseEight;
 
-public class Function {
-
+/**
+ * Clase Function
+ * Esta clase permite crear todas las funciones o métodos para ser invocados
+ * desde cualquier clase del sistema para su funcionamineto
+ *
+ * Autor
+ * John Edward Acevedo rojas -- jhedacro@gmail.com
+ *
+ * Version: v1-30/05/22
+ *
+ */
+public class Function implements IExerciseEight {
+    /**
+     * Método getIntance()
+     * Crea una instancia de la clase Function
+     * @return una intancia de la clase
+     */
     public static Function getInstance(){return new Function();}
-    static MessagesFunction messagesFunction = MessagesFunction.getInstance();
 
+    /**
+     * Se crea insctancia de la función MessagesFunction
+     */
+    static MessagesFunction messagesFunction = MessagesFunction.getInstance();
+    /**
+     * Se crea insctancia de la función scannerExerciseEight
+     */
     static ScannerExerciseEight scannerExerciseEight = ScannerExerciseEight.getInstance();
+
+    /**
+     * Método workingDay()
+     * Permite mostrar un mensaje en pantalla dependiento de la opción ingresado por el usuario
+     * Las opciones pueden ser 'Dia Loboral' o 'Dia No Laboral'
+     */
     public void workingDay() {
         int day;
         messagesFunction.getDay();

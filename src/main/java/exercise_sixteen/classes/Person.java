@@ -8,20 +8,27 @@ public class Person  {
     public static Person getInstance(){return new Person();}
 
     private final Random random = new Random();
-    private String name = "";
-    private int age = 0;
+    private String name;
+    private int age;
     private final Integer dni= generateDNI();
-    private String sex = "H";
-    private Double weight = 0.0;
-    private Double height = 0.0;
+    private String sex;
+    private Double weight;
+    private Double height;
 
     public Person() {
+        this.name = "";
+        this.age = 0;
+        this.sex = "H";
+        this.weight = 0.0;
+        this.height = 0.0;
     }
 
     public Person(String name, int age, String sex) {
         this.name = name;
         this.age = age;
         this.sex = sex;
+        this.weight = 0.0;
+        this.height = 0.0;
     }
 
     public Person(String name, int age, String sex, Double weight, Double height) {

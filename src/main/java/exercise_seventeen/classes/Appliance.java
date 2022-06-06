@@ -7,16 +7,20 @@ public class Appliance {
     private double priceBase;
     private String color;
     private char energyConsumption;
-    private double weight = 5;
+    private double weight;
 
     private final String[] colors = {"blanco", "negro", "rojo", "azul", "gris"};
 
     public Appliance() {
+        this.weight=5;
+        this.priceBase=100;
     }
 
     public Appliance(double priceBase, double weight) {
         this.priceBase = priceBase;
         this.weight = weight;
+        this.weight=5;
+        this.priceBase=100;
     }
 
     public Appliance(double priceBase, String color, char energyConsumption, double weight) {

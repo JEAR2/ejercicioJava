@@ -1,13 +1,15 @@
 package exercise_seventeen.classes;
 
 public class WashingMachine extends Appliance{
-    private int load = 5;
+    private int load;
 
     public WashingMachine() {
+        this.load = 5;
     }
 
     public WashingMachine(double priceBase, double weight) {
         super(priceBase, weight);
+        this.load = 5;
     }
 
     public WashingMachine(int load,double price, String color,char energyConsumption, double weight) {

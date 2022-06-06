@@ -4,9 +4,24 @@ package exercise_one;
 import exercise_one.classes.Function;
 import exercise_one.classes.MessagesFunction;
 
-
+/**
+ * Clase Main
+ * Está clase permite la interacción del sistema con el usuario
+ * es la encargada de relizar los llamados a los métodos elegidos par el usuario
+ *
+ * Autor:
+ * John Edward Acevedo Rojas -- jhedacro@gmail.com
+ *
+ * Versión: v1-29/05/22
+ */
 public class Main {
+    /**
+     * Crea una instancia de la clase Function
+     */
     static Function functions = Function.getInstance();
+    /**
+     * Crea una instancia de la clase MessagesFunction
+     */
     static MessagesFunction messagesFunction = MessagesFunction.getInstance();
 
     public static void main(String[] args) {
@@ -14,6 +29,10 @@ public class Main {
 
     }
 
+    /**
+     * Método init()
+     * Método inicial - Permite la interacción del sistema con el usuario
+     */
     private static void init(){
         messagesFunction.showWelcome();
         int numberone = 5;
