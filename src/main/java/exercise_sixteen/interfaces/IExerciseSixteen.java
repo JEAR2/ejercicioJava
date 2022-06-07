@@ -1,9 +1,17 @@
 package exercise_sixteen.interfaces;
 
-import exercise_sixteen.classes.Person;
 
+/**
+ * Interface IExerciseSixteen
+ * Permite controlar ciertos métodos con los que debe contar el sistema
+ *
+ * Autor:
+ * John Edward Acevedo Rojas -- jhedacro@gmail.com
+ *
+ * Versión: v1-04/06/22
+ */
 public interface IExerciseSixteen {
-    Double calculateIMC(Person person);
+    int calculateIMC();
     Boolean isAdult();
 
 }

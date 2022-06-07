@@ -9,7 +9,7 @@ import exercise_nine.abstracts.ScannerAbstract;
  * Autor:
  * John Edward Acevedo Rojas -- jhedacro@gmail.com
  *
- * Versión: v1-30/05/22
+ * Versión: v1-04/06/22
  */
 public class ScannerExerciseNine extends ScannerAbstract {
     /**

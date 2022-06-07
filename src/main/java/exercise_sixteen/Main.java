@@ -5,13 +5,39 @@ import exercise_sixteen.classes.MessagesFunction;
 import exercise_sixteen.classes.Person;
 import exercise_sixteen.classes.ScannerExerciseSixteen;
 
+/**
+ * Clase Main
+ * Está clase permite la interacción del sistema con el usuario
+ * es la encargada de relizar los llamados a los métodos elegidos par el usuario
+ *
+ * Autor:
+ * John Edward Acevedo Rojas -- jhedacro@gmail.com
+ *
+ * Versión: v1-05/06/22
+ */
 public class Main {
+    /**
+     * Crea una instancia de la clase MessagesFunction
+     */
     static MessagesFunction messagesFunction = MessagesFunction.getInstance();
+
+    /**
+     * Crea una instancia de la clase ScannerExerciseSixteen
+     */
     static ScannerExerciseSixteen scannerExerciseSixteen = ScannerExerciseSixteen.getInstance();
+
+    /**
+     * Crea una instancia de la clase Person
+     */
     static Person person = Person.getInstance();
     public static void main(String[] args) {
         init();
     }
+
+    /**
+     * Método init()
+     * Método inicial - Permite la interacción del sistema con el usuario
+     */
     public static void init(){
         messagesFunction.showWelcome();
         String name;
@@ -55,6 +81,12 @@ public class Main {
 
     }
 
+    /**
+     * Método checkIdealWeight(String name,Integer imc)
+     * Permite mostrar en pantalla si la persona está o no en su peso ideal
+     * @param name nombre de la persona
+     * @param imc valor retornado del IMC (1,-1,0)
+     */
     private static void checkIdealWeight(String name,Integer imc){
         if(imc.equals(-1)){
             messagesFunction.showLightWeight(name);
@@ -67,6 +99,12 @@ public class Main {
         }
     }
 
+    /**
+     * Método isAdult(String name,boolean resul)
+     * Permite mostar en pantalla si el usaurio es o no mayor de edad
+     * @param name nombre de la persona
+     * @param resul valor boolean que varifica si la persona es o no mayor de edad
+     */
     private static void isAdult(String name,boolean resul){
         if(resul){
             messagesFunction.showIsAdult(name);

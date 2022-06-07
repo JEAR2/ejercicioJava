@@ -1,6 +1,19 @@
 package exercise_fourteen.classes;
-
+/**
+ * Clase ExceptionExerciseFourteen
+ * Está clase permite mostrar las excepciones de errores obtenidas durante el funcionamiento del sitema
+ *
+ * Autor:
+ * John Edward Acevedo Rojas -- jhedacro@gmail.com
+ *
+ * Versión: v1-04/06/22
+ */
 public class ExceptionExerciseFourteen extends RuntimeException{
+    /**
+     *Método ExceptionExerciseFourteen
+     * Permite mostrar el mensaje de exception
+     * @param message mensaje que arroja la excepción
+     */
     public ExceptionExerciseFourteen(String message, Exception exception) {
         super(message, exception);
     }
